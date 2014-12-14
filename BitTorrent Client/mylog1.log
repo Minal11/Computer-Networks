@@ -1,0 +1,12 @@
+TORRENT_FILE: Reading and parsing the torrent file
+TORRENT_FILE: Finished parsing the torrent file
+
+ SEEDER_SOCKET:Seeder listening on port no : 6767
+
+SEEDER_SOCKET: Accepted leecher connection request
+
+SEEDER: Receiving handshake from the leecher
+SEEDER_HANDSHAKE: Hashes suucessfully matched!!Sending it back to the Leecher
+SEEDER: Sending the bitfield to the leecher
+SEEDER: Received Interested message from the Leecher
+SEEDER: Sending the requested piece to the leecher

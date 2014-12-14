@@ -1,0 +1,9 @@
+TORRENT_FILE: Reading and parsing the torrent file
+TORRENT_FILE: Finished parsing the torrent file
+LEECHER_SOCKET: Established a connection with the seeder
+LEECHER_HANDHSHAKE: Initiating the handshake - Sending the handshake structure to the seeder
+LEECHER_HANDSHAKE: Received Handshake structure back from the seeder after the successful comparison of the hashes
+LEECHER: Received Bitfield from the seeder
+LEECHER: Sent the interested message to the seeder
+LEECHER: Now requesting for the pieces in the block level
+LEECHER:Successfully downloaded 31690B of 31690B
