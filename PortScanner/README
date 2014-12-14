@@ -1,0 +1,71 @@
+/**
+ * Collaborators:
+ *	Minal Kondawar (mkondawa)
+ *	Saketh Babu Palla (spalla)
+**/
+
+Description
+
+Port Scanner is a tool that enables to scan ports on a remote server. The program performs six different scans namely SYN, UDP, FIN, NULL, ACK and XMAS. The program stores results of each scan and draws a conclusion on whether a port is open, filtered, closed, open|filtered or unfiltered. Along with these scan program also finds the version of service running on some predefined standard ports as SSH,SMTP,HTTP, WHOIS, POP3, IMAP.
+
+Task Accomplished
+
+1. Program scans any port on specified IP address via all TCP scanning techniques
+
+2. Program performs UDP scan of any port on any specified IP address.
+
+3.Program can analyze the incoming packets and derive conclusion about which ports are open/closed/filtered/unfiltered.
+
+4. Program can verify that ports for SSH, HTTP, SMTP, POP, IMAP, and WHOIS are indeed running these services and retrieve the actual service versions.
+
+5. Program can scan IP prefixes and read IP address from files.
+
+6. Program is multi-threaded.
+
+Included Files:
+	- portScanner.cpp
+
+	- Makefile
+
+	- Readme
+
+To Compile (Makefile included):
+
+	make
+
+To execute:
+
+	Ports: The ports can be specified either indiviually or in range format
+
+	Ip: Ip address can be specified in prefix mode, file mode or individual ip addresses.
+
+	Scan: The scans are acceptable in these formats: SYN, ACK, NULL, Xmas, FIN, UDP
+	
+	Speedup: Threads can be enabled by providing this option followed by the number of threads
+
+Example: sudo nice ./portscanner --ports 1-1024 --ip 129.79.247.87 --scan SYN --speedup 100
+
+Output
+
+Prints the result and conclusion for each IP address, port and scan in given format
+
+
+References:
+
+
+TCP/IP Sockets in C: A Practical Guide for Programmers (2nd Edition) 
+by Michael J. Donahoo and Kenneth L. Calvert 
+
+http://sock-raw.org/papers/syn_scanner
+
+http://www.binarytides.com/dns-query-code-in-c-with-linux-sockets/
+
+http://www.binarytides.com/raw-sockets-c-code-linux/
+
+http://www.binarytides.com/tcp-syn-portscan-in-c-with-linux-sockets/
+
+http://www.tcpdump.org/pcap.html 
+ 
+www.stackoverflow.com
+www.cpluplus.com
+

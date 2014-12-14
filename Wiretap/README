@@ -1,0 +1,33 @@
+Name:
+1. Minal Kondawar (mkondawa)
+2. Saketh Babu Palla (spalla)
+
+Assignment title: Wiretap
+
+Description:
+Wiretap is a Network Protocol Analyzer. The dump given in the tcpdump format, contains TCP and UDP traffic. 
+Program, Wiretap, take a file containing tcpdump data as its input and output the statistics for each packet mentioned in handout:
+1.Summary
+2.Link Layer
+3.Network Layer
+4.Transport Layer
+
+Task accomplished
+Open the tcpdump file, parse the data and prints the mentioned statistics for each packet in file.
+
+Compile:
+make
+(g++ -lpcap wiretap.cpp -o wiretap)
+
+Execute:
+./wiretap --open <file_name>
+./wiretap --open wget.pcap
+
+Output
+
+Prints the statictics in format specified in sample files.
+
+
+
+
+
